@@ -17,4 +17,4 @@ let greeting = `Hello, ${name}! Welcome to the test file.`;
 console.log(greeting); //display a greeting message
 
 const password = '12345';
-console.log('   The password is: ' + password); //display the password Test file for demonstration purposes.    
+console.log('   The password is: ' + password); //display the password Test file for demonstration purposes.     
