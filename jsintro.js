@@ -43,3 +43,35 @@ let arr3=[1, "piyush", true, null]; //array of mixed datatypes
 console.log( arr);
 console.log( arr2);
 console.log( arr3); 
+
+//function 
+const person = {
+    fullname: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+const person1 = {
+    firstName: "John",
+    lastName: "Doe",
+}
+
+const person2 = {
+    firstName: "Jane",
+    lastName: "Smith",
+}   
+console.log(person.fullname.call(person2));      // John Doe
+
+// slice
+let lang="javascript";
+console.log("Slice(0,4):",lang.slice(0,4)); //javascript
+console.log("Slice(4):",lang.slice(4));     //script
+
+//split
+let names="piyush,rahul,sachin";
+let nameArray=names.split(",");
+console.log("split:",nameArray);
+
+//template literals
+let username="piyush";
+let age1=21;
+console.log(`my name is ${username} and age is ${age} `);
